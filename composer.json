@@ -7,7 +7,7 @@
     "authors": [
         {
             "name": "Vini",
-            "email": "vineeth.quintet@gmail.com"
+            "email": "vineethck90@gmail.com"
         }
     ],
     "autoload": { 
@@ -15,7 +15,7 @@
             "vini\\midlog\\" : "/src" 
         } 
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "0.0.1",
     "require": {
         "illuminate/support": "~5"
     }
