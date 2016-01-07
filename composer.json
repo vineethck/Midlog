@@ -1,0 +1,21 @@
+{
+    "name": "vini/midlog",
+    "description": "Middleware package for logging all requests and responses",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vini",
+            "email": "vineeth.quintet@gmail.com"
+        }
+    ],
+    "autoload": { 
+        "psr-4": { 
+            "vini\\midlog\\" : "/src" 
+        } 
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5"
+    }
+}
