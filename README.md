@@ -21,7 +21,7 @@ Update composer:
     composer update
 ```
 
-Add the provider to your app/config/app.php:
+Add the provider to your config/app.php:
 ```
   'providers' => [
   
@@ -34,5 +34,5 @@ Add the provider to your app/config/app.php:
 
 Publish package config:
 ```
-  php artisan config:publish vini/midlog
+  php artisan vendor:publish
 ```
