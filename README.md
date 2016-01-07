@@ -4,7 +4,7 @@ Laravel middleware package for logging HTTP requests and responses
 Installation
 -------------
 
-Add LogLikeRails as a requirement to composer.json:
+Add Midlog as a requirement to composer.json:
 ```
 {
   ...
