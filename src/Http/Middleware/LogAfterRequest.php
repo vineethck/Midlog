@@ -1,6 +1,6 @@
 <?php
 
-namespace vini\midlog\Middleware;
+namespace vini\midlog\Http\Middleware;
 
 use Closure;
 use Monolog\Logger;
