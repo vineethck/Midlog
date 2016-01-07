@@ -14,7 +14,7 @@ class MidlogServiceProvider extends ServiceProvider
     public function boot(\Illuminate\Foundation\Http\Kernel $kernel)
     {
         $this->publishes([
-            __DIR__.'/vini/midlog/Config/logger.php' => config_path('logger.php'),
+            __DIR__.'/Config/logger.php' => config_path('logger.php'),
         ]);
         $kernel->pushMiddleware('vini\midlog\Http\Middleware\LogAfterRequest');
     }
