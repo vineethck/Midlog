@@ -11,12 +11,13 @@ class MidlogServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(\Illuminate\Foundation\Http\Kernel $kernel)
+    public function boot()
     {
         $this->publishes([
             __DIR__.'/Config/logger.php' => config_path('logger.php'),
         ]);
-        $kernel->pushMiddleware('vini\midlog\Http\Middleware\LogAfterRequest');
+        $this->app->make('Illuminate\Contracts\Http\Kernel')
+            ->pushMiddleware('vini\midlog\Http\Middleware\LogAfterRequest');
     }
 
     /**
